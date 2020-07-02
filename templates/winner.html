@@ -1,0 +1,21 @@
+<html><head>
+<title>TIc Tac Toe</title>
+<link rel="stylesheet" href="/static/mine.css">
+</head>
+<body>
+<script>
+var msg = "{{msg}}";
+{{alert}};
+</script>
+<center><h4>Turn of {{turn}}  <input type="button" value="Restart Game!" onclick="location.href='/initialize_game'"></h4></center>
+<form method="post" action="/shail">
+{% for i in range(1,10) %}
+{% if i==(winner[i-1]+1) %}
+	<button type="submit" value="{{ i }}" name="{{ i }}" class="winner" {{disabled}}>{{ board[i-1] }}</button>
+
+{% else %}
+	<button type="submit" value="{{ i }}" name="{{ i }}" class="" {{disabled}}>{{ board[i-1] }}</button>
+{% endif %}
+{% endfor %}
+</form>
+</body></html>

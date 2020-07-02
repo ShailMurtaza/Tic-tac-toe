@@ -1,0 +1,25 @@
+button {
+	height:30%;
+	width:33%;
+	font-size : 60px;
+}
+button:hover {
+	background:#525252;
+	color:red;
+}
+button:active {
+	background:red;
+	color:white;
+}
+.winner {
+	background:#ebeb34;
+	color:black;
+}
+.tick {
+	background:#6eb585;
+	color:white;
+}
+.cross {
+	background:#d16a62;
+	color:white;
+}
